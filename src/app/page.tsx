@@ -5,7 +5,7 @@ import SideBar from "@/components/SideBar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen">
       <div>
         <Nav />
         <div className="w-min">

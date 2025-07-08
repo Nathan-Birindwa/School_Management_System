@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+.scrollbox {
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #a9a6a6 #15141400; /* Firefox */
+  background-color: black;
+
+  /* WebKit (Chrome, Safari) */
+}
+.scrollbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.scrollbox::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}

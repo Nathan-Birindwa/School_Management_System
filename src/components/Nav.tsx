@@ -6,7 +6,7 @@ export default function Nav() {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#161b22] flex justify-between items-center py-4 px-4">
+    <nav className="w-full fixed bg-[#161b22] flex justify-between items-center py-4 px-4">
       {/* Logo */}
       <div className="text-[#e6edf3]">
         <h1 className="text-2xl font-bold">Admin Portal</h1>
