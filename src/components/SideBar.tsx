@@ -117,10 +117,10 @@ const SideBar: React.FC = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const handleLogin = (): void => {
-    setIsLoggedIn(true);
-    setIsMobileMenuOpen(false);
-  };
+  // const handleLogin = (): void => {
+  //   setIsLoggedIn(true);
+  //   setIsMobileMenuOpen(false);
+  // };
 
   const toggleMobileMenu = (): void => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -234,15 +234,6 @@ const SideBar: React.FC = () => {
                 <span>{item.label}</span>
               </a>
             ))}
-
-            {/* Login Button */}
-            <button
-              onClick={handleLogin}
-              className="flex items-center gap-3 px-3 py-2 text-[#238636] hover:bg-[#21262d] rounded-lg transition-colors w-full mt-4"
-            >
-              <User size={20} />
-              <span>Login / Sign Up</span>
-            </button>
           </>
         )}
       </nav>
@@ -278,7 +269,7 @@ const SideBar: React.FC = () => {
   return (
     <div>
       {/* Desktop Sidebar */}
-      <div className="bg-[#0d1117] sm:block hidden w-64 overflow-auto scrollbox h-screen p-4 border-r border-[#30363d] flex flex-col">
+      <div className="bg-[#0d1117] sm:block hidden w-64 overflow-auto scrollbox h-screen p-4 border-r border-[#30363d]  flex-col">
         <SidebarContent />
       </div>
 
