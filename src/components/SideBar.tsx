@@ -184,7 +184,7 @@ const SideBar: React.FC = () => {
   const SidebarContent: React.FC = () => (
     <>
       {/* Sidebar Header */}
-      <div className="mb-8">
+      <div className="stick mb-8">
         <h2 className="text-[#e6edf3] text-lg font-semibold">
           {isLoggedIn
             ? `${userRole.charAt(0).toUpperCase() + userRole.slice(1)} Portal`
